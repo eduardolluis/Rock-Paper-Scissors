@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <<div class="game-container">
+    <header>
+        <div class="header-content">
+            <h1>Rock Paper Scissors</h1>
+            <div class="score-board">
+                <span class="score-text">Score</span>
+                <span class="score" id="score">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+      <div class="choices-container">
+        <div class="choice" id="rock" data-choice="rock">
+          <img src="icon-rock.svg" alt="Rock">
+        </div>
+        <div class="choice" id="paper" data-choice="paper">
+          <img src="icon-paper.svg" alt="Paper">
+        </div>
+        <div class="choice" id="scissors" data-choice="scissors">
+          <img src="icon-scissors.svg" alt="Scissors">
+        </div>
+      </div>
+      <div class="result-container" id="result-container">
+        <h2 id="result-message"></h2>
+        <button id="play-again">Play Again</button>
+      </div>
+    </main>
+
+    <div class="rules-button-container">
+      <button id="rules-button">Rules</button>
+    </div>
+
+    <div class="modal" id="rules-modal">
+      <div class="modal-content">
+        <span class="close-button" id="close-button">&times;</span>
+        <h2>Rules</h2>
+        <img src="image-rules.svg" alt="Rules">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Eduardo De La Cruz</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
